@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Search Results - Smart Property Oman</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .sort-options {
+      margin-bottom: 20px;
+    }
+
+    .sort-options label {
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .property-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 15px;
+    }
+
+    .property-card img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .property-info {
+      flex: 1;
+    }
+
+    .property-info h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .property-info p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .property-info a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #D6A77A;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #D6A77A;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Search Results</h1>
+    <p>Find your ideal property in Oman</p>
+  </header>
+
+ <!-- Main Content -->
+  <section class="content">
+
+    <!-- Filter and Sort Options -->
+    <div class="sort-options">
+      <label for="area">Filter by area:</label>
+      <select id="area">
+        <option value="all">All</option>
+        <option value="muscat">Qurums</option>
+        <option value="nizwa">Nizwa</option>
+        <option value="bawshar">Bawshar</option>
+        <option value="al hail">Al Hail</option>
+        <option value="sohar">Sohar</option>
+      </select>
+
+      <label for="price" style="margin-left: 10px;">Filter by price:</label>
+      <select id="price">
+        <option value="all">All Prices</option>
+        <option value="below-50000">Below 50,000</option>
+        <option value="50000-100000">50,000 - 100,000</option>
+        <option value="above-100000">Above 100,000</option>
+      </select>
+
+      <label for="type" style="margin-left: 10px;">Filter by type:</label>
+      <select id="type">
+        <option value="all">All Types</option>
+        <option value="apartment">Apartment</option>
+        <option value="villa">Villa</option>
+        <option value="townhouse">Townhouse</option>
+      </select>
+
+      <label for="sort" style="margin-left: 20px;">Sort by:</label>
+      <select id="sort">
+        <option value="low-high">Price (Low to High)</option>
+        <option value="high-low">Price (High to Low)</option>
+      </select>
+
+      <button id="sort-btn">Apply</button>
+    </div>
+
+    <!-- Property Cards -->
+    <div class="property-card" data-area="muscat" data-price="85000" data-type="apartment">
+      <img src="aptqurum.jpg" alt="House 1" />
+      <div class="property-info">
+        <h3>Modern Apartment in Qurum</h3>
+        <p>Price: 85,000 OMR</p>
+        <p>Area: 120 sqm - 2 Bedrooms</p>
+        <a href="property-details.html">View Details</a>
+      </div>
+    </div>
+
+    <div class="property-card" data-area="nizwa" data-price="95000" data-type="villa">
+      <img src="nizwavilla2.webp" alt="House 2" />
+      <div class="property-info">
+        <h3>Luxury Villa in Nizwa</h3>
+        <p>Price: 95,000 OMR</p>
+        <p>Area: 250 sqm - 4 Bedrooms</p>
+        <a href="property2.html">View Details</a>
+      </div>
+    </div>
+
+    <div class="property-card" data-area="bawshar" data-price="200000" data-type="townhouse">
+      <img src="townhouse3.webp" alt="House 5" />
+      <div class="property-info">
+        <h3>Elegant Townhouse in Bawshar</h3>
+        <p>Price: 200,000 OMR</p>
+        <p>Area: 180 sqm - 3 Bedrooms</p>
+        <a href="property4.html">View Details</a>
+      </div>
+    </div>
+
+    <div class="property-card" data-area="al hail" data-price="100000" data-type="villa">
+      <img src="pp.jpg" alt="House 4" />
+      <div class="property-info">
+        <h3>Family Home in Al Hail</h3>
+        <p>Price: 100,000 OMR</p>
+        <p>Area: 200 sqm - 3 Bedrooms</p>
+        <a href="property5.html">View Details</a>
+      </div>
+    </div>
+
+    <div class="property-card" data-area="sohar" data-price="25000" data-type="apartment">
+      <img src="poii.jpg" alt="House 3" />
+      <div class="property-info">
+        <h3>Cozy Studio in Sohar</h3>
+        <p>Price: 25,000 OMR</p>
+        <p>Area: 45 sqm - 1 Bedroom</p>
+        <a href="property3.html">View Details</a>
+      </div>
+    </div>
+<p id="no-results" style="display: none; text-align: center; font-size: 18px; color: #888; margin-top: 40px;">
+  😕 No properties match your search.
+</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Smart Property Oman
+  </footer>
+
+<script>
+  function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+
+  function filterProperties(area, price, type) {
+    const cards = document.querySelectorAll('.property-card');
+    let anyVisible = false;
+
+    cards.forEach(card => {
+      const cardArea = card.dataset.area?.toLowerCase();
+      const cardType = card.dataset.type?.toLowerCase();
+      const cardPrice = Number(card.dataset.price);
+
+      let show = true;
+
+      // Area match
+      if (area !== 'all' && cardArea !== area) show = false;
+
+      // Type match
+      if (type !== 'all' && cardType !== type) show = false;
+
+      // Price match
+      if (price !== 'all') {
+        if (price === 'below-50000' && cardPrice >= 50000) show = false;
+        if (price === '50000-100000' && (cardPrice < 50000 || cardPrice > 100000)) show = false;
+        if (price === 'above-100000' && cardPrice <= 100000) show = false;
+      }
+
+      if (show) {
+        card.style.display = 'flex';
+        anyVisible = true;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Show/hide "no results" message
+    document.getElementById('no-results').style.display = anyVisible ? 'none' : 'block';
+  }
+
+  function sortPropertiesByPrice(order = 'low-high') {
+    const container = document.querySelector('.content');
+    if (!container) return;
+
+    const cards = Array.from(document.querySelectorAll('.property-card'))
+      .filter(card => card.style.display !== 'none');
+
+    cards.sort((a, b) => {
+      const priceA = Number(a.dataset.price);
+      const priceB = Number(b.dataset.price);
+      return order === 'low-high' ? priceA - priceB : priceB - priceA;
+    });
+
+    cards.forEach(card => container.appendChild(card));
+  }
+
+  function updateUrlParams(area, price, type, sort) {
+    const url = new URL(window.location.href);
+    url.searchParams.set('area', area);
+    url.searchParams.set('price', price);
+    url.searchParams.set('type', type);
+    url.searchParams.set('sort', sort);
+    history.replaceState(null, '', url.toString());
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const areaSelect = document.getElementById('area');
+    const priceSelect = document.getElementById('price');
+    const typeSelect = document.getElementById('type');
+    const sortSelect = document.getElementById('sort');
+    const sortBtn = document.getElementById('sort-btn');
+
+    const selectedArea = getQueryParam('area')?.toLowerCase() || 'all';
+    const selectedPrice = getQueryParam('price') || 'all';
+    const selectedType = getQueryParam('type')?.toLowerCase() || 'all';
+    const selectedSort = getQueryParam('sort') || 'low-high';
+
+    areaSelect.value = selectedArea;
+    priceSelect.value = selectedPrice;
+    typeSelect.value = selectedType;
+    sortSelect.value = selectedSort;
+
+    filterProperties(selectedArea, selectedPrice, selectedType);
+    sortPropertiesByPrice(selectedSort);
+
+    function applyFilters() {
+      const area = areaSelect.value.toLowerCase();
+      const price = priceSelect.value;
+      const type = typeSelect.value.toLowerCase();
+      const sort = sortSelect.value;
+
+      filterProperties(area, price, type);
+      sortPropertiesByPrice(sort);
+      updateUrlParams(area, price, type, sort);
+    }
+
+    areaSelect.addEventListener('change', applyFilters);
+    priceSelect.addEventListener('change', applyFilters);
+    typeSelect.addEventListener('change', applyFilters);
+    sortBtn.addEventListener('click', applyFilters);
+  });
+</script>
+
+
+</body>
+</html>

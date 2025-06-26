@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services - Smart Property Oman</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      background-color: #444;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .service-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .service-box h3 {
+      margin-top: 0;
+      color: #D6A77A;
+    }
+
+    footer {
+      background-color: #D6A77A;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Services</h1>
+    <p>Explore what we offer to simplify your property journey</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="service-box">
+      <h3>🔍 Property Search</h3>
+      <p>Find properties across Oman using smart filters by location, price, and size.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>✔ Verified Listings</h3>
+      <p>We manually verify each property to ensure authenticity and avoid scams.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>📊 Market Insights</h3>
+      <p>We provide real estate trends and data-driven insights to help you decide better.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>📩 Contact Sellers Easily</h3>
+      <p>Reach out to property owners or agents directly via WhatsApp or email.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>📝 Property Submission</h3>
+      <p>Have a property to sell or rent? Submit your listing and request a verified badge.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Smart Property Oman
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Property Oman - Home</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-image: url('1-1567604.png');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .search-bar {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .search-bar input, .search-bar select, .search-bar button {
+      padding: 10px;
+      font-size: 16px;
+      flex: 1;
+    }
+
+    .featured-properties, .benefits, .testimonials {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .cta button {
+      padding: 12px 24px;
+      background-color: #D6A77A;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background-color: #c69364;
+    }
+
+    footer {
+      background-color: #D6A77A;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smart Property Oman</h1>
+    <p>Find your dream property with ease</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="About Us.html">About</a>
+    <a href="Services.html">Services</a>
+    <a href="Contact Page.html">Contact</a>
+  </nav>
+
+  <div class="container">
+
+<!-- Start Searching Button -->
+<div class="section search-bar" style="text-align: center; padding: 40px;">
+  <button id="start-searching-button" style="
+    background-color: #D6A77A;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+  ">
+    Start Searching for Your Dream Home
+  </button>
+</div>
+
+<script>
+  document.getElementById("start-searching-button").addEventListener("click", function () {
+    window.location.href = "./search.html";
+  });
+</script>
+
+
+
+
+    <!-- 🏠 Featured Properties -->
+    <div class="section featured-properties">
+      <h2>Featured Properties</h2>
+      <p>Explore our top listings hand-picked for you.</p>
+    </div>
+
+    <!-- 💡 Platform Introduction -->
+    <div class="section">
+      <h2>What is Smart Property Oman?</h2>
+      <p>Smart Property Oman is a modern platform that helps you find, compare, and connect with the best property deals across the country with ease.</p>
+    </div>
+
+    <!-- ✅ Benefits -->
+    <div class="section benefits">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>✅ Verified Sellers</li>
+        <li>📈 Price Trends and Market Data</li>
+        <li>🔍 Easy Search and Filter Options</li>
+        <li>🛡️ Trusted & Secure Platform</li>
+      </ul>
+    </div>
+
+    <!-- 🌟 Testimonials / Stats -->
+    <div class="section testimonials">
+      <h2>What People Say</h2>
+      <p>⭐ "I found my home in just 3 days!"</p>
+      <p>⭐ "Simple, clean and very helpful platform."</p>
+     
+    </div>
+
+  <!-- 📣 Call to Action -->
+<div class="section cta">
+  <h2>Ready to start?</h2>
+  <button onclick="document.getElementById('searchSection').scrollIntoView({ behavior: 'smooth' })">
+  Start Searching
+</button>
+  <button onclick="document.getElementById('listSection').scrollIntoView({ behavior: 'smooth' })">
+  List Your Property
+</button>
+
+</div>
+
+
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Smart Property Oman. Muscat.</p>
+  </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - Smart Property Oman</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('7276206-2265do.webp');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .team-img {
+      width: 200px;              
+      height: 200px;             
+      object-fit: cover;         
+      border-radius: 50%;        
+      display: block;
+      margin: 20px auto;        
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    }
+
+    footer {
+      background-color: #D6A77A;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Us</h1>
+    <p>Who we are and how we work</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="About Us.html">About</a>
+    <a href="Services.html">Services</a>
+    <a href="Contact Us.html">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>Who We Are</h2>
+      <p>We are a team based in Muscat offering smart real estate services.</p>
+      <img src="pexels-photo-3184418.jpeg" alt="Our Team" class="team-img">
+    </div>
+
+    <div class="section">
+      <h2>Our Mission</h2>
+      <p>To simplify property search and make verified listings accessible to all.</p>
+    </div>
+
+    <div class="section">
+      <h2>Property Verification</h2>
+      <p>We verify each listing manually with our trusted partners.</p>
+    </div>
+
+    <div class="section">
+      <h2>Our Data Sources</h2>
+      <p>Listings come from certified agencies and direct owner submissions.</p>
+    </div>
+
+    <div class="section">
+      <h2>Meet Our Team</h2>
+      <p>Our team includes developers, real estate pros, and support staff.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Smart Property Oman
+  </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Search Results - Smart Property Oman</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .sort-options {
+      margin-bottom: 20px;
+    }
+
+    .sort-options label {
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .property-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 15px;
+    }
+
+    .property-card img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .property-info {
+      flex: 1;
+    }
+
+    .property-info h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .property-info p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .property-info a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #D6A77A;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #D6A77A;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+ <header id="searchSection">
+    <h1>Search Results</h1>
+    <p>Find your ideal property in Oman</p>
+  </header>
+
+  <!-- Main Content -->
+  <section class="content">
+
+    <!-- Filter and Sort Options -->
+    <div class="sort-options">
+      <label for="area">Filter by area:</label>
+      <select id="area">
+        <option value="all">All</option>
+        <option value="muscat">Qurum</option>
+        <option value="nizwa">Nizwa</option>
+        <option value="bawshar">Bawshar</option>
+        <option value="al hail">Al Hail</option>
+        <option value="sohar">Sohar</option>
+      </select>
+
+      <label for="sort" style="margin-left: 20px;">Sort by:</label>
+      <select id="sort">
+        <option value="low-high">Price (Low to High)</option>
+        <option value="high-low">Price (High to Low)</option>
+      </select>
+      <button id="sort-btn">Sort</button>
+    </div>
+
+    <!-- Property Cards -->
+    <div class="property-card" data-area="muscat">
+      <img src="aptqurum.jpg" alt="House 1" />
+      <div class="property-info">
+        <h3>Modern Apartment in Qurum</h3>
+        <p>Price: 85,000 OMR</p>
+        <p>Area: 120 sqm - 2 Bedrooms</p>
+        <a href="property-details.html">View Details</a>
+      </div>
+    </div>
+
+    <div class="property-card" data-area="nizwa">
+      <img src="nizwavilla2.webp" alt="House 2" />
+      <div class="property-info">
+        <h3>Luxury Villa in Nizwa</h3>
+        <p>Price: 95,000 OMR</p>
+        <p>Area: 250 sqm - 4 Bedrooms</p>
+        <a href="property2.html">View Details</a>
+      </div>
+    </div>
+
+    <div class="property-card" data-area="bawshar">
+      <img src="townhouse3.webp" alt="House 5" />
+      <div class="property-info">
+        <h3>Elegant Townhouse in Bawshar</h3>
+        <p>Price: 200,000 OMR</p>
+        <p>Area: 180 sqm - 3 Bedrooms</p>
+        <a href="property4.html">View Details</a>
+      </div>
+    </div>
+
+    <div class="property-card" data-area="al hail">
+      <img src="pp.jpg" alt="House 4" />
+      <div class="property-info">
+        <h3>Family Home in Al Hail</h3>
+        <p>Price: 100,000 OMR</p>
+        <p>Area: 200 sqm - 3 Bedrooms</p>
+        <a href="property5.html">View Details</a>
+      </div>
+    </div>
+
+    <div class="property-card" data-area="sohar">
+      <img src="poii.jpg" alt="House 3" />
+      <div class="property-info">
+        <h3>Cozy Studio in Sohar</h3>
+        <p>Price: 25,000 OMR</p>
+        <p>Area: 45 sqm - 1 Bedroom</p>
+        <a href="property3.html">View Details</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Smart Property Oman
+  </footer>
+
+<script>
+  // Get URL parameter
+  function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+
+  // Filter by area using data-area attributes
+  function filterPropertiesByArea(area) {
+    const cards = document.querySelectorAll('.property-card');
+    cards.forEach(card => {
+      const cardArea = card.dataset.area?.toLowerCase();
+      if (!area || area === 'all' || cardArea === area) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Sort visible properties by price
+  function sortPropertiesByPrice(order = 'low-high') {
+    const container = document.querySelector('.content');
+    if (!container) return;
+
+    // Get visible cards only
+    const cards = Array.from(document.querySelectorAll('.property-card')).filter(card => card.style.display !== 'none');
+
+    // Sort cards by numeric price parsed from "Price: XX,XXX OMR"
+    cards.sort((a, b) => {
+      const priceA = parseInt(a.querySelector('.property-info p').textContent.replace(/[^0-9]/g, ''), 10);
+      const priceB = parseInt(b.querySelector('.property-info p').textContent.replace(/[^0-9]/g, ''), 10);
+
+      return order === 'low-high' ? priceA - priceB : priceB - priceA;
+    });
+
+    // Append sorted cards back to container
+    cards.forEach(card => container.appendChild(card));
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const areaSelect = document.getElementById('area');
+    const sortSelect = document.getElementById('sort');
+    const sortBtn = document.getElementById('sort-btn');
+
+    // Read URL params
+    const selectedArea = getQueryParam('area')?.toLowerCase() || 'all';
+    const selectedSort = getQueryParam('sort') || 'low-high';
+
+    // Set UI controls initial values
+    if (areaSelect) areaSelect.value = selectedArea;
+    if (sortSelect) sortSelect.value = selectedSort;
+
+    // Initial filtering and sorting
+    filterPropertiesByArea(selectedArea);
+    sortPropertiesByPrice(selectedSort);
+
+    // Listen for filter changes
+    if (areaSelect) {
+      areaSelect.addEventListener('change', (e) => {
+        const area = e.target.value.toLowerCase();
+        filterPropertiesByArea(area);
+
+        // Update URL param
+        const url = new URL(window.location.href);
+        url.searchParams.set('area', area);
+        history.replaceState(null, '', url.toString());
+      });
+    }
+
+    // Listen for sort button click
+    if (sortBtn && sortSelect) {
+      sortBtn.addEventListener('click', () => {
+        const order = sortSelect.value;
+        sortPropertiesByPrice(order);
+
+        // Update URL param
+        const url = new URL(window.location.href);
+        url.searchParams.set('sort', order);
+        history.replaceState(null, '', url.toString());
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Smart Property Oman</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+  header {
+      background-image: url('1-1567604.png');
+      background-size: medium;
+      background-position: center;
+      height: 300px;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .contact-info {
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    .contact-info a {
+      display: inline-block;
+      margin: 5px 0;
+      padding: 10px 20px;
+      background-color: #D6A77A;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .contact-info a:hover {
+      background-color: #c59764;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .form-group textarea {
+      height: 150px;
+    }
+
+    .form-group button {
+      padding: 10px 20px;
+      background-color: #D6A77A;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #c59764;
+    }
+
+    .social-links {
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    .social-links a:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #D6A77A;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>We're here to help you with your property needs!</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+
+      <!-- WhatsApp, Email, Phone -->
+      <p><a href="https://wa.me/968XXXXXXXX" target="_blank">📱 Contact us via WhatsApp</a></p>
+      <p><a href="mailto:info@smartproperty.om">📧 Send us an Email</a></p>
+      <p><strong>📞 Call us: +968 123 4567</strong></p>
+    </div>
+
+   <!-- Contact Form -->
+<div class="form-group">
+  <h2>Send Us a Message</h2>
+  <form action="submit_form.php" method="POST">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+</div>
+
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <h2>Follow Us</h2>
+      <a href="https://www.facebook.com/smartpropertyoman" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/smartpropertyoman" target="_blank">Instagram</a>
+      <a href="https://www.twitter.com/smartpropertyoman" target="_blank">Twitter</a>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Smart Property Oman
+  </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>List a Property - Smart Property Oman</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="file"] {
+      padding: 5px;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    .form-check {
+      margin: 15px 0;
+    }
+
+    .form-check input {
+      margin-right: 10px;
+    }
+
+    button {
+      background-color: #D6A77A;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c59764;
+    }
+
+    footer {
+      background-color: #D6A77A;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header id="listSection">
+  <h1>List a Property</h1>
+  <p>Add your property details for review and publishing</p>
+</header>
+
+<!-- Simplified Property Submission Form -->
+<div class="container">
+  <h2>Submit Your Property</h2>
+  <form action="submit_property.php" method="POST">
+    <!-- Title -->
+    <div class="form-group">
+      <label for="title">Property Title</label>
+      <input type="text" id="title" name="title" placeholder="e.g. Luxury Villa in Nizwa" required />
+    </div>
+
+    <!-- Description -->
+    <div class="form-group">
+      <label for="description">Full Description</label>
+      <textarea id="description" name="description" placeholder="Write a detailed description..." required></textarea>
+    </div>
+
+    <!-- Price -->
+    <div class="form-group">
+      <label for="price">Price (OMR)</label>
+      <input type="number" id="price" name="price" required />
+    </div>
+
+    <!-- Area -->
+    <div class="form-group">
+      <label for="area">Area (sqm)</label>
+      <input type="number" id="area" name="area" required />
+    </div>
+
+    <!-- Type -->
+    <div class="form-group">
+      <label for="type">Property Type</label>
+      <select id="type" name="type" required>
+        <option value="">Select Type</option>
+        <option>Apartment</option>
+        <option>Villa</option>
+        <option>Studio</option>
+        <option>Townhouse</option>
+      </select>
+    </div>
+
+    <!-- Verified Badge -->
+    <div class="form-group">
+      <input type="checkbox" id="verified" name="verified" />
+      <label for="verified">Request Verified Seller Badge</label>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-group">
+      <button type="submit">Submit for Approval</button>
+    </div>
+  </form>
+</div>
+
+
+
+  <footer>
+    &copy; 2025 Smart Property Oman
+  </footer>
+<script>
+  document.getElementById("search-button").addEventListener("click", function () {
+    const selectedArea = document.getElementById("area-filter").value;
+    // You can also add price range and property type parameters here if needed
+    const url = new URL(window.location.origin + "/search.html");
+    url.searchParams.set("area", selectedArea);
+    // For example, add other filters similarly:
+    // url.searchParams.set("price", selectedPrice);
+    // url.searchParams.set("type", selectedType);
+    window.location.href = `search.html?area=${encodeURIComponent(selectedArea)}`;
+
+  });
+</script>
+
+</body>
+</html>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="About Us.html">About</a>
+  <a href="search.html">Search</a>
+  <a href="list-property.html">List Property</a>
+  <a href="Contact Us.html">Contact</a>
+</nav>

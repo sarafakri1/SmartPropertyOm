@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Smart Property Oman</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+  header {
+      background-image: url('1-1567604.png');
+      background-size: medium;
+      background-position: center;
+      height: 300px;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .contact-info {
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    .contact-info a {
+      display: inline-block;
+      margin: 5px 0;
+      padding: 10px 20px;
+      background-color: #D6A77A;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .contact-info a:hover {
+      background-color: #c59764;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .form-group textarea {
+      height: 150px;
+    }
+
+    .form-group button {
+      padding: 10px 20px;
+      background-color: #D6A77A;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #c59764;
+    }
+
+    .social-links {
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    .social-links a:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #D6A77A;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>We're here to help you with your property needs!</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+
+      <!-- WhatsApp, Email, Phone -->
+      <p><a href="https://wa.me/968XXXXXXXX" target="_blank">📱 Contact us via WhatsApp</a></p>
+      <p><a href="mailto:info@smartproperty.om">📧 Send us an Email</a></p>
+      <p><strong>📞 Call us: +968 123 4567</strong></p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="form-group">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <h2>Follow Us</h2>
+      <a href="https://www.facebook.com/smartpropertyoman" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/smartpropertyoman" target="_blank">Instagram</a>
+      <a href="https://www.twitter.com/smartpropertyoman" target="_blank">Twitter</a>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Smart Property Oman
+  </footer>
+
+</body>
+</html>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="list-property.html">List a Property</a>
+    <a href="search-results.html">Search Results</a> <!-- رابط البحث -->
+</nav>
